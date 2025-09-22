@@ -27,9 +27,6 @@ df[, Time := NULL]      # Remove Time column
 
 # View(df)
 
-# Export Data
-write.table(df, file = "dataset.txt", sep = ";", row.names = FALSE)
-
-# Read with (another file):
-# df <- read.table(file = "dataset.txt", sep = ";", header = T)
+# Save
+saveRDS(df, file = "dataset.rds")
 # -------------------
